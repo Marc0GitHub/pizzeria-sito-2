@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <ul>
+            <li>Home</li>   
+            <li>Menu</li>   
+            <li>Info</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+
+    <!-- LANDING PAGE -->
+    <div class="container-section-1">
+        <section class="image-section">
+            <video class="background-section" autoplay playsinline loop id="myVideo"> <source src="assets/Untitled video - Made with Clipchamp.mp4" type="video/mp4">Your browser does not support HTML5 video.
+            </video>
+
+            <img class="logo" src="assets/bella italia (6).svg" alt="">
+        </section>
+        <div class="text-image-container">
+            <div class="text-section">
+                <h1>Pizzeria Bella Italia</h1>
+                <p>Welkom bij Pizzeria Bella Italia in Eizeringen, Lennik. Sinds 2016 serveren Aldo Santoro en Gabriella Parillo hier authentieke Napolitaanse pizza's en pasta's. Proef de heerlijke smaken van Campanië in België. Kom langs voor een unieke culinaire ervaring!</p>
+                <p><a href="tel:024613157" style="color: inherit;"><b>02 461 31 57</b></a></p>            </div>
+        
+
+            <div class="image-container">
+                <img class="image-1" src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/441523890_942483550867126_2081061945458738575_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHCAzwMLy18peYZGclxAAatOZHLAiYmVUI5kcsCJiZVQjg5f3J7xp4TbOpV2hCEhtA_26MDGMm_WTrxVTeIYrDr&_nc_ohc=UxMIg05mx0sQ7kNvgHxCYI3&_nc_ht=scontent-bru2-1.xx&oh=00_AYA8TmqFtr3CJSzFRVjSx7jBAct2GG_qN1hJU0T0NsTBEg&oe=66A99904" alt="">
+            </div>
+        </div>
+    </div>
+
+        <!-- MENU SECTION -->
+         <!-- Idea of creating a dropdown menu, or just a scrolling menu like in the old site -->
+         <div class="dropdown">
+            <button class="dropbtn" id="menuButton">Menu<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 256 256" z>
+
+                <defs>
+                </defs>
+                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                    <path d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #FFFAE2; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                </g>
+                </svg></button>            
+            <div class="dropdown-content" id="dropdownContent">                
+                <a href="#" data-content="pizzas">Pizza's</a>
+                <a href="#" data-content="pastas">Pasta's</a>
+                <a href="#" data-content="antipasti">Antipasti</a>
+                <a href="#" data-content="scaloppine">Scaloppine</a>
+                <a href="#" data-content="insalata">Insalata</a>
+                <a href="#" data-content="desserts">Desserts</a>
+            </div>
+        </div>
+        <div class="cont-menu-content">
+            <section id="menuContent">
+            
+            <div id="pizzas" class="menu-section">
+            <ul>
+                <li><b>Pizza all'Aglio</b> <span class="ingr-cnt"><span class="ingredients">mozzarella, look, oregano</span> <span class="prices">9,00</span></span></li>
+                <li><b>Margherita</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella</span> <span class="prices">9,00</span></span></li>
+                <li><b>Napoletana</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, oregano, look</span> <span class="prices">11,00</span></span></li>
+                <li><b>Prosciutto Cotto</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, gekookte hesp</span> <span class="prices">11,00</span></span></li>
+                <li><b>Funghi</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, champignons</span> <span class="prices">11,00</span></span></li>
+                <li><b>Diavola</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, pikante salami</span> <span class="prices">12,00</span></span></li>
+                <li><b>Rimini</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, hesp, champignons</span> <span class="prices">12,00</span></span></li>
+                <li><b>Calabrese</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, pikante salami, ansjovis, kappertjes</span> <span class="prices">12,00</span></span></li>
+                <li><b>Hawaii</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, hesp, ananas</span> <span class="prices">12,00</span></span></li>
+                <li><b>Bolognese</b> <span class="ingr-cnt"><span class="ingredients">mozzarella, bolognesesaus</span> <span class="prices">13,00</span></span></li>
+                <li><b>Siciliana</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, kappertjes, ansjovis, olijven</span> <span class="prices">13,00</span></span></li>
+                <li><b>Tonno</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, tonijn, ajuin</span> <span class="prices">13,00</span></span></li>
+                <li><b>Vegetariana</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, champignons, gegrilde groenten, oregano, olijven</span> <span class="prices">13,00</span></span></li>
+                <li><b>Parmigiana</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, aubergine, parmezaankaas</span> <span class="prices">12,00</span></span></li>
+                <li><b>Calzone</b> <span class="ingr-cnt"><span class="ingredients">toegeplooide pizza met tomaat, mozzarella, hesp, champignon</span> <span class="prices">13,00</span></span></li>
+                <li><b>San Remo</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, salami, hesp, champignons</span> <span class="prices">13,00</span></span></li>
+                <li><b>Quattro Formaggi</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, taleggio, parmezaankaas, gorgonzola</span> <span class="prices">13,00</span></span></li>
+                <li><b>Parma</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, parmaham</span> <span class="prices">13,00</span></span></li>
+                <li><b>Koukou</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, kip, ajuin, champignons</span> <span class="prices">14,00</span></span></li>
+                <li><b>Quattro Stagioni</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, hesp, champignons, artisjok</span> <span class="prices">13,00</span></span></li>
+                <li><b>Capricciosa</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, hesp, champignons, artisjok, kappertjes, olijven, ansjovis</span> <span class="prices">15,00</span></span></li>
+                <li><b>Pescatore</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, zeevruchten</span> <span class="prices">15,00</span></span></li>
+                <li><b>Pancetta</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, buikspek, ajuin, ei</span> <span class="prices">14,00</span></span></li>
+                <li><b>Primavera</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, rucola, parmaham, kerstomaat, parmezaankaas</span> <span class="prices">16,00</span></span></li>
+                <li><b>Scampi</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, 5 scampi's</span> <span class="prices">16,00</span></span></li>
+                <li><b>Carpaccio</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, rundsvlees, rucola, parmezaankaas, balsamicoazijn</span> <span class="prices">16,00</span></span></li>
+                <li><b>Salmone</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, gerookte zalm</span> <span class="prices">16,00</span></span></li>
+                <li><b>Bella Italia</b> <span class="ingr-cnt"><span class="ingredients">pizza in stervorm met tomaat, mozzarella, salami, hesp, champignons, balsamicoazijn</span> <span class="prices">16,00</span></span></li>
+                <li><b>Tirolese</b> <span class="ingr-cnt"><span class="ingredients">tomaat, gerookte mozzarella, gerookt speck, rucola, kerstomaten</span> <span class="prices">16,00</span></span></li>
+                <li><b>Tartufata</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, truffelcrème, champignons, rucola</span> <span class="prices">17,00</span></span></li>
+                <li><b>Bufala</b> <span class="ingr-cnt"><span class="ingredients">tomaat, mozzarella, parmaham, champignons, verse sla, verse mozzarella</span> <span class="prices">18,00</span></span></li>
+            </ul>
+        </div>
+
+        <div id="pastas" class="menu-section" style="display: none;">
+            <ul>
+                <li><b>Spaghetti Bolognese</b> <span class="ingr-cnt"><span class="ingredients">spaghetti, bolognesesaus</span> <span class="prices">13,00</span></span></li>
+                <li><b>Lasagna Bella Italia</b> <span class="ingr-cnt"><span class="ingredients">mozzarella, emmentalkaas, bolognesesaus</span> <span class="prices">13,00</span></span></li>
+                <li><b>Lasagna Vegetariana</b> <span class="ingr-cnt"><span class="ingredients">mozzarella, groenten, saus</span> <span class="prices">13,00</span></span></li>
+                <li><b>Pasta Arrabiata</b> <span class="ingr-cnt"><span class="ingredients">buikspek, pikante saus</span> <span class="prices">13,00</span></span></li>
+                <li><b>Cannelloni</b> <span class="ingr-cnt"><span class="ingredients">ricotta, spinazie, mozzarella, saus</span> <span class="prices">13,00</span></span></li>
+                <li><b>Spaghetti Carbonara</b> <span class="ingr-cnt"><span class="ingredients">spek, verse room, ei, parmezaankaas</span> <span class="prices">13,00</span></span></li>
+                <li><b>Penne Quattro Formaggi</b> <span class="ingr-cnt"><span class="ingredients">taleggio, gorgonzola, verse room, parmezaankaas</span> <span class="prices">13,00</span></span></li>
+                <li><b>Pasta Chef</b> <span class="ingr-cnt"><span class="ingredients">spek, champignons, verse room, saus</span> <span class="prices">13,00</span></span></li>
+                <li><b>Spaghetti Vegetariana</b> <span class="ingr-cnt"><span class="ingredients">groenten, saus, olijven</span> <span class="prices">13,00</span></span></li>
+                <li><b>Penne Prosciutto Cotto</b> <span class="ingr-cnt"><span class="ingredients">hesp, champignons, saus, verse room</span> <span class="prices">13,00</span></span></li>
+                <li><b>Penne Salsiccia e Funghi</b> <span class="ingr-cnt"><span class="ingredients">Italiaanse worst, champignons, saus</span> <span class="prices">15,00</span></span></li>
+                <li><b>Penne Salmone</b> <span class="ingr-cnt"><span class="ingredients">gerookte zalm, saus, verse room</span> <span class="prices">15,00</span></span></li>
+                <li><b>Spaghetti alla Puttanesca</b> <span class="ingr-cnt"><span class="ingredients">scampi's, ansjovis, saus, kappertjes, olijven</span> <span class="prices">16,00</span></span></li>
+                <li><b>Spaghetti Vongole</b> <span class="ingr-cnt"><span class="ingredients">venusschelpen, saus, kruiden</span> <span class="prices">16,00</span></span></li>
+                <li><b>Spaghetti Frutti di Mare</b> <span class="ingr-cnt"><span class="ingredients">zeevruchten, saus</span> <span class="prices">16,00</span></span></li>
+                <li><b>Spaghetti Scampi e Zucchine</b> <span class="ingr-cnt"><span class="ingredients">scampi's, courgette, saus</span> <span class="prices">16,00</span></span></li>
+                <li><b>Scampi all'Aglio</b> <span class="ingr-cnt"><span class="ingredients">7 scampi's, looksaus, spaghetti</span> <span class="prices">18,00</span></span></li>
+                <li><b>Spaghetti Scampi e Salmone</b> <span class="ingr-cnt"><span class="ingredients">scampi's, zalm, saus, verse room</span> <span class="prices">18,00</span></span></li>
+            </ul>
+        </div>
+
+        <div id="antipasti" class="menu-section" style="display: none;">
+            <ul>
+                <li><b>Bruschette all'aglio</b> <span class="ingr-cnt"><span class="ingredients">10 stuks; brood, look, mozzarella</span> <span class="prices">8,00</span></span></li>
+                <li><b>Bruschette al Pomodoro</b> <span class="ingr-cnt"><span class="ingredients">10 stuks; brood, kerstomaten, oregano, olie</span> <span class="prices">9,00</span></span></li>
+                <li><b>Bruschette Mix</b> <span class="ingr-cnt"><span class="ingredients">10 stuks - kerstomaten, gerookte mozzarella, spek, truffelcrème</span> <span class="prices">11,00</span></span></li>
+                <li><b>Caprese</b> <span class="ingr-cnt"><span class="ingredients">verse tomaten, mozzarella, oregano, olie</span> <span class="prices">12,00</span></span></li>
+                <li><b>Parmigiana Melanzane</b> <span class="ingr-cnt"><span class="ingredients">aubergines, tomatensaus, mozzarella</span> <span class="prices">14,00</span></span></li>
+                <li><b>Italiano Misto</b> <span class="ingr-cnt"><span class="ingredients">Italiaanse vleeswaren, gegrilde groenten, bruschette</span> <span class="prices">14,00</span></span></li>
+                <li><b>Carpaccio di Manzo</b> <span class="ingr-cnt"><span class="ingredients">rundsvlees, rucola, kruiden, parmezaankaas</span> <span class="prices">15,00</span></span></li>
+            </ul>
+        </div>
+            
+        <div id="scaloppine" class="menu-section" style="display: none;">
+            <ul>
+                <li><b>Scaloppina Milanese</b> <span class="ingr-cnt"><span class="ingredients">gepaneerd kalfslapje, spaghetti, saus</span> <span class="prices">17,00</span></span></li>
+                <li><b>Scaloppina Pizzaiola</b> <span class="ingr-cnt"><span class="ingredients">kalfslapje, saus, kappertjes, look, oregano</span> <span class="prices">17,00</span></span></li>
+                <li><b>Scaloppina Sorrentina</b> <span class="ingr-cnt"><span class="ingredients">kalfslapje, mozzarella, saus, gebakken in de oven</span> <span class="prices">18,00</span></span></li>
+                <li><b>Scaloppina Parmigiana</b> <span class="ingr-cnt"><span class="ingredients">kalfslapje, aubergines, mozzarella, parmezaankaas</span> <span class="prices">18,00</span></span></li>
+                <li><b>Scaloppina della Casa</b> <span class="ingr-cnt"><span class="ingredients">kalfslapje, parmaham, saus, mozzarella</span> <span class="prices">19,00</span></span></li>
+            </ul>
+        </div>
+        
+        <div id="insalata" class="menu-section" style="display: none;">
+            <ul>
+                <li><b>Insalata Napoletana</b> <span class="ingr-cnt"><span class="ingredients">salade, rucola, kerstomaten, verse mozzarella, olijven, balsamicoazijn</span> <span class="prices">13,00</span></span></li>
+                <li><b>Insalata Siciliana</b> <span class="ingr-cnt"><span class="ingredients">salade, gegrilde groenten, olijven, rucola, kerstomaten</span> <span class="prices">13,00</span></span></li>
+                <li><b>Insalata di Pollo</b> <span class="ingr-cnt"><span class="ingredients">salade, kip, rucola, kerstomaten, parmezaankaas</span> <span class="prices">15,00</span></span></li>
+                <li><b>Insalata Parma</b> <span class="ingr-cnt"><span class="ingredients">salade, parmaham, parmezaankaas, rucola, tomaten</span> <span class="prices">15,00</span></span></li>
+                <li><b>Insalata Salmone e Scampi</b> <span class="ingr-cnt"><span class="ingredients">salade, zalm, scampi's, rucola, kerstomaten</span> <span class="prices">17,00</span></span></li>
+            </ul>
+        </div>
+
+        <div id="desserts" class="menu-section" style="display: none;">
+            <ul>
+                <li><b>Tiramisù</b> <span class="ingr-cnt"><span class="ingredients"></span> <span class="prices">5,00</span></span></li>
+                <li><b>Pannacotta</b> <span class="ingr-cnt"><span class="ingredients"></span> <span class="prices">5,00</span></span></li>
+                <li><b>Tartufo Café</b> <span class="ingr-cnt"><span class="ingredients"></span> <span class="prices">6,00</span></span></li>
+                <li><b>Tartufo Limoncello</b> <span class="ingr-cnt"><span class="ingredients"></span> <span class="prices">6,00</span></span></li>
+                <li><b>Gelato Tartufo Cioccolato</b> <span class="ingr-cnt"><span class="ingredients">chocolade truffelijs</span> <span class="prices">6,00</span></span></li>
+                <li><b>Pizza Nutella</b> <span class="ingr-cnt"><span class="ingredients">8 stukjes</span> <span class="prices">12,00</span></span></li>
+            </ul>
+        </div>
+        </div>
+            
+            
+         </section>
+    <script src="script.js"></script>
+</body>
+</html>
