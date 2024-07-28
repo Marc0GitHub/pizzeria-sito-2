@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.getElementById('menuButton');
     const dropdownContent = document.getElementById('dropdownContent');
@@ -69,5 +71,55 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update the button text
             menuButton.innerHTML = `${itemName} <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 256 256"><defs></defs><g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #FFFAE2; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"></path></g></svg>`;
         });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('vacation-popup');
+    const closePopupButton = document.getElementById('close-popup');
+    let popupClosed = false; // Flag to track if the popup has been closed
+
+    // Function to show the popup
+    function showPopup() {
+        if (!popupClosed) {
+            popup.style.display = 'block';
+        }
+    }
+
+    // Function to hide the popup
+    function hidePopup() {
+        popup.style.display = 'none';
+        popupClosed = true; // Set the flag to indicate the popup has been closed
+    }
+
+    // Event listener to hide the popup when the close button is clicked
+    closePopupButton.addEventListener('click', hidePopup);
+
+    // Event listener to show the popup after scrolling down 100px
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+            showPopup();
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .slide-in').forEach(element => {
+        observer.observe(element);
     });
 });

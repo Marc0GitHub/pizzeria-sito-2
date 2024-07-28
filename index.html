@@ -10,18 +10,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="margin-page">
     <!-- NAVIGATION HEADER -->
     <header>
         <ul>
-            <li>Home</li>   
-            <li>Menu</li>   
-            <li>Info</li>
-            <li>Contact</li>
+            <li><a href="#home-section">Home</a></li>   
+            <li><a href="#menuButton">Menu</a></li>   
+            <li><a href="#infobox">Info</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
     </header>
 
     <!-- LANDING PAGE -->
-    <div class="container-section-1">
+    <div class="container-section-1" id="home-section">
         <section class="image-section">
             <video class="background-section" autoplay playsinline loop id="myVideo"> <source src="assets/Untitled video - Made with Clipchamp.mp4" type="video/mp4">Your browser does not support HTML5 video.
             </video>
@@ -29,13 +30,13 @@
             <img class="logo" src="assets/bella italia (6).svg" alt="">
         </section>
         <div class="text-image-container">
-            <div class="text-section">
+            <div class="text-section fade-in">
                 <h1>Pizzeria Bella Italia</h1>
                 <p>Welkom bij Pizzeria Bella Italia in Eizeringen, Lennik. Sinds 2016 serveren Aldo Santoro en Gabriella Parillo hier authentieke Napolitaanse pizza's en pasta's. Proef de heerlijke smaken van Campanië in België. Kom langs voor een unieke culinaire ervaring!</p>
                 <p><a href="tel:024613157" style="color: inherit;"><b>02 461 31 57</b></a></p>            </div>
         
 
-            <div class="image-container">
+            <div class="image-container slide-in">
                 <img class="image-1" src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/441523890_942483550867126_2081061945458738575_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHCAzwMLy18peYZGclxAAatOZHLAiYmVUI5kcsCJiZVQjg5f3J7xp4TbOpV2hCEhtA_26MDGMm_WTrxVTeIYrDr&_nc_ohc=UxMIg05mx0sQ7kNvgHxCYI3&_nc_ht=scontent-bru2-1.xx&oh=00_AYA8TmqFtr3CJSzFRVjSx7jBAct2GG_qN1hJU0T0NsTBEg&oe=66A99904" alt="">
             </div>
         </div>
@@ -44,7 +45,7 @@
         <!-- MENU SECTION -->
          <!-- Idea of creating a dropdown menu, or just a scrolling menu like in the old site -->
          <div class="dropdown">
-            <button class="dropbtn" id="menuButton">Menu<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 256 256" z>
+            <button class="dropbtn slide-in" id="menuButton">Menu<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 256 256" z>
 
                 <defs>
                 </defs>
@@ -52,7 +53,7 @@
                     <path d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #FFFAE2; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
                 </g>
                 </svg></button>            
-            <div class="dropdown-content" id="dropdownContent">                
+            <div class="dropdown-content slide-in" id="dropdownContent">                
                 <a href="#" data-content="pizzas">Pizza's</a>
                 <a href="#" data-content="pastas">Pasta's</a>
                 <a href="#" data-content="antipasti">Antipasti</a>
@@ -169,6 +170,68 @@
             
             
          </section>
+
+         <!-- INFO -->
+
+         <section class="infobox-cnt slide-in" id="infobox">
+            <div class="child-cnt opening">
+                <img src="assets/time-2625.svg" alt="">
+                    <p><b>Openingsuren</b></p>
+                    <p>Geopend van maandag t.e.m. zaterdag van 17 tot 21:30 en ook op vrijdag en zaterdag van 12 tot 14:30. Gesloten op zondag.</p>
+            </div>
+            <div class="child-cnt address">
+                <img src="assets/pin-49.svg" alt="">
+                    <p><b>Vind ons hier</b></p>
+                    <p>U vindt ons op Ninoofsesteenweg 55 in Lennik. We kijken uit naar uw bezoek!</p>
+            </div>
+            <div class="child-cnt contact">
+                <img src="assets/phone-13.svg" alt="">
+            <p><b>Reserveer hier</b></p>
+        <p>Reserveer makkelijk online of met je mobiele telefoon. 15151541</p></div>
+         </section>
+
+         <!-- GALLERY -->
+
+         <section>
+         <div class="wrapper slide-in">
+
+            <h1>Onze snaps</h1>
+          
+          
+            <div class="img-area">
+          
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/253662552_2175088992630801_1176450582791739566_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEIzF_raLvU-_XycamxBR8cyqxeZSsN523KrF5lKw3nbWAs81PI4Yu58x7mEMUovIVAIdWhRhu_uR3W5qqjCGAo&_nc_ohc=kvVs0kSeApkQ7kNvgGdsDhP&_nc_ht=scontent-bru2-1.xx&oh=00_AYCRjPViiVOl6iVQVifCDWAa72mCtdDyK2CMz1q3sgxWOQ&oe=66AB45DD" alt=""></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241643245_2126145967525104_1244552071197719889_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGDNfb1wQn4VYRfyvT6uBU1IoOcT1Z22H4ig5xPVnbYfp5Pld7U4KNvH2dzYvesEo99v458DQjdAETe-jQJOa98&_nc_ohc=qwVutRuk_bIQ7kNvgHxiAYL&_nc_ht=scontent-bru2-1.xx&oh=00_AYDHXs1xiHMIf5nCygabrG5VXdv9TBa0pWjFvKxw4EeXQA&oe=66AB2118" alt=""></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241635087_2126145907525110_8071309544068729427_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHnJfK5oAZQ9s6s-PZziZV6Amg77h35e2UCaDvuHfl7ZVH0WNS4m-IUUSgbd6TiSmtaWYSO94iubiDfsga3XoHx&_nc_ohc=UnuMUE-F74kQ7kNvgEkycsI&_nc_ht=scontent-bru2-1.xx&oh=00_AYD2KcaO-8N9006ZgPh5zRvKKxu7EfSiUzApcw96gCNB9A&oe=66AB1F67" alt=""></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241634583_2126145844191783_2140451842754824122_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH0-BbJ8CJR8JGCXr2KdCVygTRvJL5Wf3yBNG8kvlZ_fNhXFcsNCmZevgZwzbk9Yme3DyJrqYeaN1v2m0iualL1&_nc_ohc=JNKSqnMfvLIQ7kNvgFIMDWt&_nc_ht=scontent-bru2-1.xx&oh=00_AYC6Nipxz8ji2B6wlimHphSsrZZ7IzClFQQYGsZcLr8jTQ&oe=66AB41A1" alt=""></div>
+              <div class="single-img"><img src="assets/pizzeria2.jpg" alt=""></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.6435-9/69482111_1463427027130338_7055937956527210496_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeG9Up4ckOwsp3psDXmMyB20wcU3iqSnRDvBxTeKpKdEOybi6kqYMPoaNGKZfzX6Yq146827vxcaOGNa67OzvN0a&_nc_ohc=hX_9Uwi-oE8Q7kNvgHATOXA&_nc_ht=scontent-bru2-1.xx&oh=00_AYB7PHPtBlqpB3TPKuHe1uh-DUXKxxGPTev91qzUF7YitQ&oe=66CCE68F" alt=""></div>
+              <div class="single-img"><img src="https://mail.google.com/mail/u/0?ui=2&ik=06dd1a962c&attid=0.2&permmsgid=msg-a:r-859814013863066705&th=190f8cd1a401f750&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8HqrzdO93VsiHgrR-OA1hLyrvWpiu3fUSdCikDjgnFEJLnJuxIGJR2d8Kr0MAzdfv3KetHU0DcCaKOp0G844mE-QbWUDUf1iSzmEQGBNJBINwv67I369K2aUo&disp=emb&realattid=190f8ccde8de90d8cf31" alt=""></div>
+              <div class="single-img"><img src="https://mail.google.com/mail/u/0?ui=2&ik=06dd1a962c&attid=0.3&permmsgid=msg-a:r-859814013863066705&th=190f8cd1a401f750&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_k28Onf5JzrdKxzqXPEXy8AgW8IbiJA3eMeJBiNq22Ep_2CjqIIVXpXO9u5VSFlPuU90c-AiSMjR6-m1m5QYwqR12RQor9Ee9mz6N8CxLriiU43xH8CFM4j_8&disp=emb&realattid=190f8ccf23940bfef652" alt=""></div>
+              <div class="single-img"><img src="https://mail.google.com/mail/u/0?ui=2&ik=06dd1a962c&attid=0.1&permmsgid=msg-a:r-859814013863066705&th=190f8cd1a401f750&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9J3OKwkTiFwa6KIC4ixrUczkoJ9Q2eFIhZwzSaxmn1r1Tsoe4UAsQFoaf0PIiczYIGRroBHOFibBK8kkGDqR1WvKuUtkA6pl5z6Nly_Ec1sfqt3_-bRSOj5DU&disp=emb&realattid=190f8cd0353f615ca643" alt=""></div>
+          
+            </div>
+          </div>
+        </section>
+        
+    </div>
+
+        <!-- Popup Div -->
+        <div id="vacation-popup" class="popup">
+            <p>We zijn gesloten voor vakantie van 5 augustus tot 28 augustus.</p>
+            <button id="close-popup">&#x2717;</button>
+        </div>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.4175212878413!2d4.14789620619055!3d50.8364113483816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3b9226fb7c975%3A0x5c718d3ae0fb6b03!2sPizzeria%20BELLA%20ITALIA%20di%20ALDO%20SANTORO!5e0!3m2!1sit!2sbe!4v1722117294553!5m2!1sit!2sbe" width="100%" height="300px"  style="border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <footer id="footer">
+            <ul>
+                <a href="tel:024613157"><li><img src="assets/phone-13.svg" alt=""></li></a>
+                <a href="https://www.takeaway.com/be-it/menu/bella-italia-lennik?shipping=pickup" target="_blank"><li><img src="assets/restaurant-12939.svg" alt=""></li></a>
+                <a href="https://www.facebook.com/FastfoodBellaItalia/" target="_blank"><li><img src="assets/facebook-logo-126.svg" alt=""></li></a>
+            </ul>
+            <p>Designed with &#10084; by Marco Tancredi</p>
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>
