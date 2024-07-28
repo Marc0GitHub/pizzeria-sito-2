@@ -103,23 +103,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target); // Stop observing once it's visible
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-in, .slide-in').forEach(element => {
-        observer.observe(element);
-    });
-});
