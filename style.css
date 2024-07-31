@@ -511,7 +511,7 @@ header ul a{
 
   }
 
-  footer ul {
+  footer div {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -520,7 +520,7 @@ header ul a{
     padding: 0;
   }
 
-  footer ul li img{
+  footer div a img{
     width: 20px;
   }
 
@@ -528,7 +528,7 @@ header ul a{
     color: #595653;
   }
 
-  footer ul li img:hover{
+  footer div a img:hover{
     filter: opacity(50%);
   }
 
