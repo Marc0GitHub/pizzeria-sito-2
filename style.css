@@ -96,6 +96,11 @@ body {
         filter: opacity(60%);
     }
 
+    .wrapper h1 {
+        color: var(--neutral-color-light);
+    }
+
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -148,6 +153,11 @@ body {
     .background-section {
         filter: opacity(85%);
     }
+
+    .wrapper h1 {
+        color: var(--neutral-color-dark);
+    }
+
 
 }
 
@@ -422,7 +432,6 @@ header ul a{
     text-align: center;
     font-size: 30px;
     margin-top: 5rem;
-    color: var(--neutral-color-light);
   }
 
   .wrapper img {
