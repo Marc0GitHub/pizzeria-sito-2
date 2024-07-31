@@ -1,16 +1,6 @@
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('header');
 
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 60) { // 1rem is approximately 16px
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-});
 
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
@@ -103,4 +93,41 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 60) { // 1rem is approximately 16px
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('[data-lang]');
+    
+    function switchLanguage(language) {
+        elements.forEach(element => {
+            const text = element.getAttribute(`data-${language}`);
+            if (text) {
+                // Decode HTML entities and set innerHTML
+                element.innerHTML = decodeEntities(text);
+            }
+        });
+    }
+
+    function decodeEntities(encodedString) {
+        const textarea = document.createElement('textarea');
+        textarea.innerHTML = encodedString;
+        return textarea.value;
+    }
+
+    window.switchLanguage = switchLanguage;
+    
+    // Set default language
+    switchLanguage('nl');
+});
 
