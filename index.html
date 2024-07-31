@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
@@ -12,17 +13,17 @@
     <div class="margin-page">
 
         <!-- Language Switcher -->
-        <div id="language-switcher">
-            <button onclick="switchLanguage('nl')"><img width="48" height="48" src="https://img.icons8.com/color/48/belgium-circular.png" alt="belgium-circular"/></button>
-            <button onclick="switchLanguage('fr')"><img width="48" height="48" src="https://img.icons8.com/color/48/france-circular.png" alt="france-circular"/></button>
+        <div id="language-switcher" class="language-switcher">
+            <button class="switch-btn" onclick="switchLanguage('nl')"><img class="switch-img" width="38" height="38" src="https://img.icons8.com/color/48/belgium-circular.png" alt="belgium-circular"/></button>
+            <button class="switch-btn" onclick="switchLanguage('fr')"><img class="switch-img" width="38" height="38" src="https://img.icons8.com/color/48/france-circular.png" alt="france-circular"/></button>
         </div>
     <!-- NAVIGATION HEADER -->
     <header>
         <ul>
-            <li><a href="#home-section">Home</a></li>   
-            <li><a href="#menuButton">Menu</a></li>   
-            <li><a href="#infobox">Info</a></li>
-            <li><a href="#footer">Contact</a></li>
+            <li><a href="#home-section" data-lang="nl" data-nl="Home" data-fr="Accueil">Home</a></li>
+            <li><a href="#menuButton" data-lang="nl" data-nl="Menu" data-fr="Menu">Menu</a></li>
+            <li><a href="#infobox" data-lang="nl" data-nl="Info" data-fr="Info">Info</a></li>
+            <li><a href="#footer" data-lang="nl" data-nl="Contact" data-fr="Contact">Contact</a></li>
         </ul>
     </header>
 
@@ -31,7 +32,7 @@
         <section class="image-section">
             <!-- <video class="background-section" autoplay playsinline loop id="myVideo"> <source src="assets/video-pizzeria - Made with Clipchamp.mp4" type="video/mp4">Your browser does not support HTML5 video.
             </video> -->
-            <img src="assets/bella-italia-pizza.jpeg" alt="" class="background-section">
+            <img src="assets/bella-italia-pizza.jpeg" alt="logo" class="background-section">
 
             <img class="logo" src="assets/bella italia (6).svg" alt="">
         </section>
@@ -43,7 +44,7 @@
         
 
             <div class="image-container">
-                <img class="image-1" src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/441523890_942483550867126_2081061945458738575_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHCAzwMLy18peYZGclxAAatOZHLAiYmVUI5kcsCJiZVQjg5f3J7xp4TbOpV2hCEhtA_26MDGMm_WTrxVTeIYrDr&_nc_ohc=UxMIg05mx0sQ7kNvgHxCYI3&_nc_ht=scontent-bru2-1.xx&oh=00_AYA8TmqFtr3CJSzFRVjSx7jBAct2GG_qN1hJU0T0NsTBEg&oe=66A99904" alt="">
+                <img class="image-1" src="assets/pizzeria.jpg" alt="pizzeria">
             </div>
         </div>
     </div>
@@ -179,17 +180,17 @@
 
          <section class="infobox-cnt" id="infobox">
             <div class="child-cnt opening">
-                <img src="assets/time-2625.svg" alt="">
+                <img src="assets/time-2625.svg" alt="icon time">
                 <p><b data-lang="nl" data-nl="Openingsuren" data-fr="Horaires d'ouverture">Openingsuren</b></p>
-                <p data-lang="nl" data-nl="Geopend van maandag t.e.m. zaterdag van 17 tot 21:30 en ook op vrijdag en zaterdag van 12 tot 14:30. Gesloten op zondag." data-fr="Ouvert du lundi au samedi de 17h à 21h30 et aussi le vendredi et samedi de 12h à 14h30. Fermé le dimanche.">Geopend van maandag t.e.m. zaterdag van 17 tot 21:30 en ook op vrijdag en zaterdag van 12 tot 14:30. Gesloten op zondag.</p>
+                <p data-lang="nl" data-nl="Geopend van maandag t.e.m. zaterdag van 17 tot 21:30 en ook op vrijdag en zaterdag van 12 tot 14:30. Gesloten op zondag." data-fr="Ouvert du lundi au samedi de 17h à 21h30 et aussi le vendredi et samedi de 12h à 14h30. Fermé le dimanche.">Geopend van maandag t.e.m. zaterdag van 17 tot 21:30 en op vrijdag en zaterdag ook van 12 tot 14:30. Gesloten op zondag.</p>
             </div>
             <div class="child-cnt address">
-                <img src="assets/pin-49.svg" alt="">
+                <img src="assets/pin-49.svg" alt="icon location">
                 <p><b data-lang="nl" data-nl="Vind ons hier" data-fr="Trouvez-nous ici">Vind ons hier</b></p>
                 <p data-lang="nl" data-nl="U vindt ons op Ninoofsesteenweg 55 in Lennik. We kijken uit naar uw bezoek!" data-fr="Vous nous trouverez au Ninoofsesteenweg 55 à Lennik. Nous attendons votre visite avec impatience!">U vindt ons op Ninoofsesteenweg 55 in Lennik. We kijken uit naar uw bezoek!</p>
             </div>
             <div class="child-cnt contact">
-                <img src="assets/phone-13.svg" alt="">
+                <img src="assets/phone-13.svg" alt="icon phone">
                 <p><b data-lang="nl" data-nl="Reserveer hier" data-fr="Réservez ici">Reserveer hier</b></p>
                 <p data-lang="nl" data-nl="Reserveer makkelijk online of met je mobiele telefoon. &lt;br&gt;&lt;a href='tel:024613157' style='color: inherit;'&gt;&lt;b&gt;02 461 31 57&lt;/b&gt;&lt;/a&gt;" data-fr="Réservez facilement en ligne ou avec votre téléphone mobile. &lt;br&gt;&lt;a href='tel:024613157' style='color: inherit;'&gt;&lt;b&gt;02 461 31 57&lt;/b&gt;&lt;/a&gt;">Reserveer makkelijk online of met je mobiele telefoon. <br><a href="tel:024613157" style="color: inherit;"><b>02 461 31 57</b></a></p>
             </div>
@@ -205,20 +206,20 @@
           
             <div class="img-area">
           
-              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/253662552_2175088992630801_1176450582791739566_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEIzF_raLvU-_XycamxBR8cyqxeZSsN523KrF5lKw3nbWAs81PI4Yu58x7mEMUovIVAIdWhRhu_uR3W5qqjCGAo&_nc_ohc=kvVs0kSeApkQ7kNvgGdsDhP&_nc_ht=scontent-bru2-1.xx&oh=00_AYCRjPViiVOl6iVQVifCDWAa72mCtdDyK2CMz1q3sgxWOQ&oe=66AB45DD" alt=""></div>
-              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241643245_2126145967525104_1244552071197719889_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGDNfb1wQn4VYRfyvT6uBU1IoOcT1Z22H4ig5xPVnbYfp5Pld7U4KNvH2dzYvesEo99v458DQjdAETe-jQJOa98&_nc_ohc=qwVutRuk_bIQ7kNvgHxiAYL&_nc_ht=scontent-bru2-1.xx&oh=00_AYDHXs1xiHMIf5nCygabrG5VXdv9TBa0pWjFvKxw4EeXQA&oe=66AB2118" alt=""></div>
-              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241635087_2126145907525110_8071309544068729427_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHnJfK5oAZQ9s6s-PZziZV6Amg77h35e2UCaDvuHfl7ZVH0WNS4m-IUUSgbd6TiSmtaWYSO94iubiDfsga3XoHx&_nc_ohc=UnuMUE-F74kQ7kNvgEkycsI&_nc_ht=scontent-bru2-1.xx&oh=00_AYD2KcaO-8N9006ZgPh5zRvKKxu7EfSiUzApcw96gCNB9A&oe=66AB1F67" alt=""></div>
-              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241634583_2126145844191783_2140451842754824122_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH0-BbJ8CJR8JGCXr2KdCVygTRvJL5Wf3yBNG8kvlZ_fNhXFcsNCmZevgZwzbk9Yme3DyJrqYeaN1v2m0iualL1&_nc_ohc=JNKSqnMfvLIQ7kNvgFIMDWt&_nc_ht=scontent-bru2-1.xx&oh=00_AYC6Nipxz8ji2B6wlimHphSsrZZ7IzClFQQYGsZcLr8jTQ&oe=66AB41A1" alt=""></div>
-              <div class="single-img"><img src="assets/pizzeria2.jpg" alt=""></div>
-              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.6435-9/69482111_1463427027130338_7055937956527210496_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeG9Up4ckOwsp3psDXmMyB20wcU3iqSnRDvBxTeKpKdEOybi6kqYMPoaNGKZfzX6Yq146827vxcaOGNa67OzvN0a&_nc_ohc=hX_9Uwi-oE8Q7kNvgHATOXA&_nc_ht=scontent-bru2-1.xx&oh=00_AYB7PHPtBlqpB3TPKuHe1uh-DUXKxxGPTev91qzUF7YitQ&oe=66CCE68F" alt=""></div>
-              <div class="single-img"><img src="assets/unnamed.jpg" alt=""></div>
-              <div class="single-img"><img src="assets/IMG_7186.jpeg" alt=""></div>
-              <div class="single-img"><img src="assets/IMG_7185.jpg" alt=""></div>
-              <div class="single-img"><img src="assets/pizza-9in-oven.jpg" alt=""></div>
-              <div class="single-img"><img src="assets/bella-italia.jpg" alt=""></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/253662552_2175088992630801_1176450582791739566_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEIzF_raLvU-_XycamxBR8cyqxeZSsN523KrF5lKw3nbWAs81PI4Yu58x7mEMUovIVAIdWhRhu_uR3W5qqjCGAo&_nc_ohc=kvVs0kSeApkQ7kNvgGdsDhP&_nc_ht=scontent-bru2-1.xx&oh=00_AYCRjPViiVOl6iVQVifCDWAa72mCtdDyK2CMz1q3sgxWOQ&oe=66AB45DD" alt="food"></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241643245_2126145967525104_1244552071197719889_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGDNfb1wQn4VYRfyvT6uBU1IoOcT1Z22H4ig5xPVnbYfp5Pld7U4KNvH2dzYvesEo99v458DQjdAETe-jQJOa98&_nc_ohc=qwVutRuk_bIQ7kNvgHxiAYL&_nc_ht=scontent-bru2-1.xx&oh=00_AYDHXs1xiHMIf5nCygabrG5VXdv9TBa0pWjFvKxw4EeXQA&oe=66AB2118" alt="food"></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241635087_2126145907525110_8071309544068729427_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHnJfK5oAZQ9s6s-PZziZV6Amg77h35e2UCaDvuHfl7ZVH0WNS4m-IUUSgbd6TiSmtaWYSO94iubiDfsga3XoHx&_nc_ohc=UnuMUE-F74kQ7kNvgEkycsI&_nc_ht=scontent-bru2-1.xx&oh=00_AYD2KcaO-8N9006ZgPh5zRvKKxu7EfSiUzApcw96gCNB9A&oe=66AB1F67" alt="food"></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/241634583_2126145844191783_2140451842754824122_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH0-BbJ8CJR8JGCXr2KdCVygTRvJL5Wf3yBNG8kvlZ_fNhXFcsNCmZevgZwzbk9Yme3DyJrqYeaN1v2m0iualL1&_nc_ohc=JNKSqnMfvLIQ7kNvgFIMDWt&_nc_ht=scontent-bru2-1.xx&oh=00_AYC6Nipxz8ji2B6wlimHphSsrZZ7IzClFQQYGsZcLr8jTQ&oe=66AB41A1" alt="food"></div>
+              <div class="single-img"><img src="assets/pizzeria2.jpg" alt="food"></div>
+              <div class="single-img"><img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.6435-9/69482111_1463427027130338_7055937956527210496_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeG9Up4ckOwsp3psDXmMyB20wcU3iqSnRDvBxTeKpKdEOybi6kqYMPoaNGKZfzX6Yq146827vxcaOGNa67OzvN0a&_nc_ohc=hX_9Uwi-oE8Q7kNvgHATOXA&_nc_ht=scontent-bru2-1.xx&oh=00_AYB7PHPtBlqpB3TPKuHe1uh-DUXKxxGPTev91qzUF7YitQ&oe=66CCE68F" alt="food"></div>
+              <div class="single-img"><img src="assets/unnamed.jpg" alt="food"></div>
+              <div class="single-img"><img src="assets/IMG_7186.jpeg" alt="food"></div>
+              <div class="single-img"><img src="assets/IMG_7185.jpg" alt="food"></div>
+              <div class="single-img"><img src="assets/pizza-9in-oven.jpg" alt="food"></div>
+              <div class="single-img"><img src="assets/bella-italia.jpg" alt="food"></div>
               <div class="single-img"><img src="assets/frutti-di-mare.jpg" alt=""></div>
-              <div class="single-img"><img src="assets/siciliana.jpg" alt=""></div>
-              <div class="single-img"><img src="assets/sordi.jpg" alt=""></div>
+              <div class="single-img"><img src="assets/siciliana.jpg" alt="food"></div>
+              <div class="single-img"><img src="assets/sordi.jpg" alt="food"></div>
               
           
             </div>
@@ -241,9 +242,9 @@
 
         <footer id="footer">
             <ul>
-                <a href="tel:024613157"><li><img src="assets/phone-13.svg" alt=""></li></a>
-                <a href="https://www.takeaway.com/be-it/menu/bella-italia-lennik?shipping=pickup" target="_blank"><li><img src="assets/restaurant-12939.svg" alt=""></li></a>
-                <a href="https://www.facebook.com/FastfoodBellaItalia/" target="_blank"><li><img src="assets/facebook-logo-126.svg" alt=""></li></a>
+                <a href="tel:024613157"><li><img src="assets/phone-13.svg" alt="icon"></li></a>
+                <a href="https://www.takeaway.com/be-it/menu/bella-italia-lennik?shipping=pickup" target="_blank"><li><img src="assets/restaurant-12939.svg" alt="icon"></li></a>
+                <a href="https://www.facebook.com/FastfoodBellaItalia/" target="_blank"><li><img src="assets/facebook-logo-126.svg" alt="icon"></li></a>
             </ul>
             <p>Designed with &#10084; by Marco Tancredi</p>
         </footer>

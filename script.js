@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const popup = document.getElementById('vacation-popup');
     const closePopupButton = document.getElementById('close-popup');
@@ -94,17 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('header');
-
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 60) { // 1rem is approximately 16px
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-});
 
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('[data-lang]');
