@@ -234,7 +234,9 @@ header ul a{
     flex-direction: column;
     align-items: center;
     max-width: 50rem;
-}
+    animation: onScroll linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 30%}
 
 
 .image-section .background-section{
@@ -243,6 +245,9 @@ header ul a{
     object-fit: cover;
     border-radius: 2vw;
     /* max-height: 400px; */
+    animation: onScroll linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 30%;
 }
 
 
@@ -545,24 +550,8 @@ header ul a{
     background-color: #555;
 }
 
-  @keyframes zoomOut {
-    from {
-      transform: scale(3);
-    }
+
   
-    to {
-      transform: scale(1);
-    }
-  }
-  @keyframes zoomIn {
-    from {
-      transform: scale(.5);
-    }
-  
-    to {
-      transform: scale(1);
-    }
-  }
   
   /* Popup Styles */
 .popup {

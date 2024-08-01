@@ -207,3 +207,5 @@ function updateModal() {
     document.getElementById('modal-img').src = images[currentIndex].src;
     document.getElementById('modal-text').innerText = images[currentIndex].text;
 }
+
+AOS.init();
