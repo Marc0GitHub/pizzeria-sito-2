@@ -24,6 +24,10 @@
     <meta name="description" content="Pizzeria Bella Italia in Lennik biedt authentieke Napolitaanse pizza's en pasta's aan. Bezoek ons voor een unieke culinaire ervaring..">
     <meta name="keywords" content="Pizzeria, Pizzeria Bella Italia, Pizzeria Lennik, Bella Italia, Lennik, pizza, pasta, Pizzeria bella italia lennik">
     <meta name="robots" content="index, follow">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -39,27 +43,29 @@
         <div class="margin-page">
 
         <!-- Language Switcher -->
+         <div class="animate__animated animate__rubberBand">
         <div id="language-switcher" class="language-switcher">
             <button class="switch-btn" onclick="switchLanguage('nl')"><img class="switch-img" width="38" height="38" src="https://img.icons8.com/color/48/belgium-circular.png" alt="belgium-circular"/></button>
             <button class="switch-btn" onclick="switchLanguage('fr')"><img class="switch-img" width="38" height="38" src="https://img.icons8.com/color/48/france-circular.png" alt="france-circular"/></button>
         </div>
+    </div>
     <!-- NAVIGATION HEADER -->
-    <header>
+    <header class="animate__animated animate__backInUp">
         <ul>
-            <li><a href="#home-section" data-lang="nl" data-nl="Home" data-fr="Accueil">Home</a></li>
-            <li><a href="#menuButton" data-lang="nl" data-nl="Menu" data-fr="Menu">Menu</a></li>
+            <li><a href="#home" data-lang="nl" data-nl="Home" data-fr="Accueil">Home</a></li>
+            <li><a href="#menu" data-lang="nl" data-nl="Menu" data-fr="Menu">Menu</a></li>
             <li><a href="#infobox" data-lang="nl" data-nl="Info" data-fr="Info">Info</a></li>
             <li><a href="#footer" data-lang="nl" data-nl="Contact" data-fr="Contact">Contact</a></li>
         </ul>
     </header>
 
     <!-- LANDING PAGE -->
-    <div class="container-section-1" id="home-section">
+    <div class="container-section-1" id="home">
         <section class="image-section">
             <!-- <video class="background-section" autoplay playsinline loop id="myVideo"> <source src="assets/video-pizzeria - Made with Clipchamp.mp4" type="video/mp4">Your browser does not support HTML5 video.
             </video> -->
             <img src="assets/bella-italia-pizza.webp" alt="logo" class="background-section">
-
+            
             <img class="logo" src="assets/bella italia (6).svg" alt="">
         </section>
         <div class="text-image-container">
@@ -78,7 +84,7 @@
         <!-- MENU SECTION -->
          <!-- Idea of creating a dropdown menu, or just a scrolling menu like in the old site -->
          <div class="dropdown" data-aos="zoom-in">
-            <button class="dropbtn" id="menuButton">Menu<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 256 256" z>
+            <button class="dropbtn" id="menu">Menu<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 256 256" z>
 
                 <defs>
                 </defs>
